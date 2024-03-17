@@ -13,4 +13,8 @@ class FolderController extends Controller
         //return view('folders.index')->with(['posts' => $category->getByCategory(), 'folder_name' => $folder->name]);
         return view('folders.index')->with(['allfolder'=>$folders]);
     }
+    public function create()
+    {
+    return view('folders.create');
+    }
 }
