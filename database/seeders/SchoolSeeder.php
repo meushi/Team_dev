@@ -16,7 +16,35 @@ class SchoolSeeder extends Seeder
     public function run()
     {
         DB::table('schools')->insert([
-        'name'=>'〇〇組',
+        'name'=>'東京大学',
+        'password'=>'test',
+            ]);
+         DB::table('schools')->insert([
+        'name'=>'埼玉大学',
+        'password'=>'test',
+            ]);
+         DB::table('schools')->insert([
+        'name'=>'千葉大学',
+        'password'=>'test',
+            ]);
+         DB::table('schools')->insert([
+        'name'=>'神奈川大学',
+        'password'=>'test',
+            ]);
+         DB::table('schools')->insert([
+        'name'=>'群馬大学',
+        'password'=>'test',
+            ]);
+         DB::table('schools')->insert([
+        'name'=>'栃木大学',
+        'password'=>'test',
+            ]);
+         DB::table('schools')->insert([
+        'name'=>'茨城大学',
+        'password'=>'test',
+            ]);
+         DB::table('schools')->insert([
+        'name'=>'山梨大学',
         'password'=>'test',
             ]);
     }

@@ -13,7 +13,8 @@ class PostController extends Controller
     {
         $posts=$folder->posts()->get();
         $folderId=$folder->id;
-        return view('posts/index')->with(['posts'=>$posts,'folderId'=>$folderId]);
+        $foldertitle=$folder->title;
+        return view('posts/index')->with(['posts'=>$posts,'folderId'=>$folderId,'foldertitle'=>$foldertitle]);
     }
 
     public function create($folderId)
