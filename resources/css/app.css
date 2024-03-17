@@ -3,4 +3,28 @@
 }
 .back{
     background-color: #d58d9d
+.text-red-500{color: #94bcb7}
+
+.text-4xl{
+    font-size: 18px;
+    color: #d58d9d
+}
+
+.foldertitle{
+    font-size:18px;
+    color: #d58d9d
+}
+
+.title{
+    font-size: 28px;
+    color:#94bcb7;
+}
+
+.folders{
+    margin-top: 80px;
+}
+
+.school{
+    font-size: 28px;
+    color:#94bcb7;
 }

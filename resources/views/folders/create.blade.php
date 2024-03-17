@@ -16,7 +16,7 @@
                     <input type="text" name="folder[title]" placeholder="タイトル"/>
                 </div>
                 <div class="category">
-                    <h2>学校</h2>
+                    <h2 class='school'>学校</h2>
                     <select name="folder[school_id]">
                         @foreach($schools as $school)
                             <option value="{{ $school->id }}">{{ $school->name }}</option>
