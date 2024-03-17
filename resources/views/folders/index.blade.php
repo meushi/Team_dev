@@ -10,6 +10,7 @@
         <h1>オンライン寄せ書き</h1>
         <!--<a href='/'>投稿一覧ページへ戻る</a>-->
         <input/>
+        <a href='/folder/create'>フォルダの作成</a>
             @foreach ($allfolder as $folder)
                 <div style='border:solid 1px; margin-bottom: 10px;'>
                     <a href={{'/folder/'.$folder->id}}>{{$folder->title}}</a>

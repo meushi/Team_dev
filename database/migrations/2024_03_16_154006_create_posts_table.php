@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->foreignId('folder_id')->constrained();
-            $table->string('bady');
+            $table->string('body');
             $table->timestamps();
             $table->softDeletes();
         });

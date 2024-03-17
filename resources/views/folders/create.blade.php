@@ -13,7 +13,7 @@
                 <div class="title">
                     <input type="text" name="folder[title]" placeholder="タイトル"/>
                 </div>
+                <button type=“button”></button>
             </form>
-        <button type=“button” onclick="location.href='URL入れる、トップページ」に遷移する。'">作成</button>
     </body>
 </html>

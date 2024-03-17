@@ -12,19 +12,21 @@ class PostController extends Controller
     public function index(Folder $folder)
     {
         $posts=$folder->posts()->get();
-        return view('posts/index')->with(['posts'=>$posts]);
+        $folderId=$folder->id;
+        return view('posts/index')->with(['posts'=>$posts,'folderId'=>$folderId]);
     }
 
-    public function create(Category $category)
+    public function create($folderId)
     {
-        return view('posts/create');
+        return view('posts/create')->with(['folderId'=>$folderId]);
     }
 
-    public function store(Post $post, Request $request)
+    public function store(Post $post, Request $request, Folder $folder)
     {
         $input = $request['post'];
+        $post->folder_id=$folder->id;
         $post->fill($input)->save();
-        return redirect('/posts/' . $post->id);
+        return redirect('/folder/' . $folder->id);
     }
 
     public function edit(Post $post)

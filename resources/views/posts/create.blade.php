@@ -1,23 +1,19 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <title>Blog</title>
+        <title>メッセージ作成画面</title>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-        <h1>チーム開発会へようこそ！</h1>
-        <h2>投稿作成</h2>
-        <form action="/posts" method="POST">
-            @csrf
-            
-            <div>
-                <h2>本文</h2>
-                <textarea name="post[body]" placeholder="今日も1日お疲れさまでした。">{{ old('post.body') }}</textarea>
-                <p class="body__error" style="color:red">{{ $errors->first('post.body') }}</p>
-            </div>
-            
-            <input type="submit" value="保存"/>
-        </form>
-        <div><a href="/">戻る</a></div>
+        <!--<a href='/'>投稿一覧ページへ戻る</a>-->
+            <form action={{"/posts/".$folderId}} method="POST">
+                @csrf
+                <div class="title">
+                    <input type="text" name="post[body]" placeholder="タイトル"/>
+                </div>
+                <button type=“button”>送信</button>
+            </form>
     </body>
 </html>
