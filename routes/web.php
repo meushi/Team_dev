@@ -19,6 +19,7 @@ use App\Http\Controllers\FolderController;
 
 Route::get('/', [FolderController::class, 'index']);
 Route::get('/folder/create', [FolderController::class, 'create']);
+Route::post('/folders',[FolderController::class, 'store']);
 Route::get('/folder/{folder}',[PostController::class,'index']);
 Route::post('/posts/{folder}',  [PostController::class, 'store']);
 Route::get('/folders/create',  [FolderController::class, 'create']);
