@@ -12,10 +12,12 @@
         <h1 class="text-red-500">オンライン寄せ書き</h1>
         <!--<a href='/'>投稿一覧ページへ戻る</a>-->
         <a class='text-4xl' href='/folder/create'>フォルダの作成</a>
-            @foreach ($allfolder as $folder)
-                <div style='border:solid 1px; margin-bottom: 20px;'>
-                    <a class='foldertitle'href={{'/folder/'.$folder->id}}>{{$folder->title}}</a>
-                </div>
-            @endforeach
+            <div class='folders'>
+                @foreach ($allfolder as $folder)
+                    <div style='border:solid 1px; margin-bottom: 20px;'>
+                        <a class='foldertitle'href={{'/folder/'.$folder->id}}>{{$folder->title}}</a>
+                    </div>
+                @endforeach
+            </div>
     </body>
 </html>

@@ -15,5 +15,15 @@
 }
 
 .title{
+    font-size: 28px;
+    color:#94bcb7;
+}
+
+.folders{
+    margin-top: 80px;
+}
+
+.school{
+    font-size: 28px;
     color:#94bcb7;
 }
