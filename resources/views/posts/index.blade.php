@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-        <a href={{'/posts/create/'.$folderId}}>新規投稿</a>
+        <a href={{'/posts/create/'.$folderId}}>寄せ書きの作成</a>
         <div>
             @foreach ($posts as $post)
                 <div style='border:solid 1px; margin-bottom: 10px;'>
