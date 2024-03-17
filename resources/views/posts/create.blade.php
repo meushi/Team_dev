@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         @vite('resources/css/app.css')
     </head>
-    <body>
+    <body class='back'>
         <!--<a href='/'>投稿一覧ページへ戻る</a>-->
             <form action={{"/posts/".$folderId}} method="POST">
                 @csrf
