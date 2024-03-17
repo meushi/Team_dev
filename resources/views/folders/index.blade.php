@@ -15,5 +15,6 @@
                     <p>{{$folder->title}}</p>
                 </div>
             @endforeach
+        <button type=“button” onclick="location.href='URL入れる寄せ書きファイル作成画面」に遷移する。'">寄せ書き一覧</button>
     </body>
 </html>
