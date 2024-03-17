@@ -12,7 +12,7 @@
         <input/>
             @foreach ($allfolder as $folder)
                 <div style='border:solid 1px; margin-bottom: 10px;'>
-                    <p>{{$folder->title}}</p>
+                    <a href={{'/folder/'.$folder->id}}>{{$folder->title}}</a>
                 </div>
             @endforeach
         <a href='/folders/create'>寄せ書き作成</a>
