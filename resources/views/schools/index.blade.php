@@ -9,6 +9,7 @@
     <body>
         <h1>オンライン寄せ書き</h1>
         <!--<a href='/'>投稿一覧ページへ戻る</a>-->
-        <input></input>
+        <input/>
+        
     </body>
 </html>

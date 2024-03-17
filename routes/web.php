@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\SchoolController;
+use App\Http\Controllers\FolderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +17,7 @@ use App\Http\Controllers\SchoolController;
 |
 */
 
-Route::get('/', [SchoolController::class, 'index']);
+Route::get('/', [FolderController::class, 'index']);
 Route::post('/posts',  [PostController::class, 'store']);
 Route::get('/posts/create',  [PostController::class, 'create']);
 Route::get('/posts/{post}',  [PostController::class, 'show']);
