@@ -17,13 +17,13 @@ class PostSeeder extends Seeder
     public function run()
     {
         DB::table('posts')->insert([
-        'bady'=>'〇〇組',
+        'body'=>'〇〇組',
         'folder_id'=>1,
         'created_at' => new DateTime(),
         'updated_at' => new DateTime(),
             ]);
          DB::table('posts')->insert([
-        'bady'=>'〇〇組',
+        'body'=>'〇〇組',
         'folder_id'=>2,
         'created_at' => new DateTime(),
         'updated_at' => new DateTime(),

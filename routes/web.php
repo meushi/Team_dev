@@ -18,10 +18,11 @@ use App\Http\Controllers\FolderController;
 */
 
 Route::get('/', [FolderController::class, 'index']);
+Route::get('/folder/create', [FolderController::class, 'create']);
 Route::get('/folder/{folder}',[PostController::class,'index']);
-Route::post('/posts',  [PostController::class, 'store']);
+Route::post('/posts/{folder}',  [PostController::class, 'store']);
 Route::get('/folders/create',  [FolderController::class, 'create']);
-Route::get('/posts/create',  [PostController::class, 'create']);
+Route::get('/posts/create/{folder}',  [PostController::class, 'create']);
 Route::get('/posts/{post}',  [PostController::class, 'show']);
 Route::put('/posts/{post}',  [PostController::class, 'update']);
 Route::delete('/posts/{post}',  [PostController::class, 'delete']);
